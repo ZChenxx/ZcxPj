@@ -1,7 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb2229ce-8f4c-40bf-a304-c02210aebc95" name="Default Changelist" comment="" />
+    <list default="true" id="eb2229ce-8f4c-40bf-a304-c02210aebc95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/blueprints/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/blueprints/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/blueprints/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/form/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/form/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/static/js/moment-with-locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/templates/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ZcxPj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZcxPj.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Life/form/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Life/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/auth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/Flask_Bootstrap4-4.0.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/nav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/umd/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/umd/popper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/umd/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/umd/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/utils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/wtf.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/wtf.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +112,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zcx" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Vc7jVEGQmsDMuCFNlY0LqvZuvD" />
   <component name="ProjectViewState">
@@ -25,22 +136,24 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Life/static/js" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Life/static/js" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Life" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/blueprints" />
       <recent name="$PROJECT_DIR$/form" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.auth">
-    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZcxPj/templates/auth/register.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Flask server.Flask (run.py)">
     <configuration name="auth" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ZcxPj" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,7 +167,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auth.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blueprints/auth.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,9 +176,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ZcxPj" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Life" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Life/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (Life/models.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="ZcxPj" />
+      <option name="target" value="$PROJECT_DIR$/Life/models.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,9 +213,25 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (models.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (manage.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="ZcxPj" />
-      <option name="target" value="$PROJECT_DIR$/models.py" />
+      <option name="target" value="$PROJECT_DIR$/manage.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (run.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="ZcxPj" />
+      <option name="target" value="$PROJECT_DIR$/run.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,12 +259,21 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.ZcxPj" />
+      <item itemvalue="Flask server.Flask (Life/models.py)" />
+      <item itemvalue="Flask server.Flask (manage.py)" />
+      <item itemvalue="Flask server.Flask (run.py)" />
+      <item itemvalue="Python.auth" />
+      <item itemvalue="Python.models" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (run.py)" />
+        <item itemvalue="Python.models" />
+        <item itemvalue="Flask server.Flask (manage.py)" />
+        <item itemvalue="Flask server.Flask (Life/models.py)" />
         <item itemvalue="Python.auth" />
-        <item itemvalue="Flask server.Flask (models.py)" />
-        <item itemvalue="JavaScript Debug.register.html" />
-        <item itemvalue="Flask server.Flask (app.py)" />
       </list>
     </recent_temporary>
   </component>
@@ -141,78 +301,122 @@
       <updated>1577540665170</updated>
       <workItem from="1577540675235" duration="501000" />
       <workItem from="1577586415313" duration="11983000" />
-      <workItem from="1577670356802" duration="15008000" />
+      <workItem from="1577670356802" duration="15236000" />
+      <workItem from="1577756411167" duration="7988000" />
+      <workItem from="1577932028064" duration="496000" />
+      <workItem from="1578037912544" duration="6661000" />
+      <workItem from="1578108530462" duration="673000" />
+      <workItem from="1578109699135" duration="244000" />
+      <workItem from="1578110017568" duration="3212000" />
+      <workItem from="1578200485040" duration="9183000" />
+      <workItem from="1578218252834" duration="8571000" />
+      <workItem from="1578274880369" duration="93000" />
+      <workItem from="1578275115964" duration="28000" />
+      <workItem from="1578275152961" duration="9500000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1297" height="257" key="GridCell.Tab.0.bottom" timestamp="1577710095601">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state width="1208" height="257" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1577688614489" />
-    <state width="1208" height="257" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1577696151598" />
-    <state width="1297" height="257" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1577708468668" />
-    <state width="1297" height="257" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1577709332150" />
-    <state width="1297" height="257" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1577710095601" />
-    <state width="1297" height="257" key="GridCell.Tab.0.center" timestamp="1577710095600">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state width="1208" height="257" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1577688614488" />
-    <state width="1208" height="257" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1577696151597" />
-    <state width="1297" height="257" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1577708468667" />
-    <state width="1297" height="257" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1577709332150" />
-    <state width="1297" height="257" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1577710095600" />
-    <state width="1297" height="257" key="GridCell.Tab.0.left" timestamp="1577710095599">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state width="1208" height="257" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1577688614488" />
-    <state width="1208" height="257" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1577696151597" />
-    <state width="1297" height="257" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1577708468667" />
-    <state width="1297" height="257" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1577709332149" />
-    <state width="1297" height="257" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1577710095599" />
-    <state width="1297" height="257" key="GridCell.Tab.0.right" timestamp="1577710095600">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state width="1208" height="257" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1577688614489" />
-    <state width="1208" height="257" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1577696151597" />
-    <state width="1297" height="257" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1577708468667" />
-    <state width="1297" height="257" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1577709332150" />
-    <state width="1297" height="257" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1577710095600" />
-    <state width="1638" height="319" key="GridCell.Tab.1.bottom" timestamp="1577635320707">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1577635320707" />
-    <state width="1638" height="319" key="GridCell.Tab.1.center" timestamp="1577635320706">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
-    <state width="1638" height="319" key="GridCell.Tab.1.left" timestamp="1577635320706">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
-    <state width="1638" height="319" key="GridCell.Tab.1.right" timestamp="1577635320706">
-      <screen x="0" y="23" width="1680" height="963" />
-    </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
-    <state x="346" y="146" key="SettingsEditor" timestamp="1577689110537">
+    <state x="0" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578243206184">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state x="346" y="146" key="SettingsEditor/0.23.1680.961@0.23.1680.961" timestamp="1577689110537" />
-    <state x="346" y="146" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1577628084318" />
-    <state x="346" y="146" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1577626663276" />
-    <state x="460" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1577670358505">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="0" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.961@0.23.1680.961" timestamp="1578243206184" />
+    <state x="568" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578213160149">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state x="460" y="358" key="com.intellij.ide.util.TipDialog/0.23.1680.963@0.23.1680.963" timestamp="1577599947821" />
-    <state x="460" y="359" key="com.intellij.ide.util.TipDialog/0.23.1680.965@0.23.1680.965" timestamp="1577670358505" />
+    <state x="568" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.963@0.23.1680.963" timestamp="1578213160149" />
+    <state x="111" y="159" key="CommitChangelistDialog2" timestamp="1578316239337">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state x="111" y="159" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1578316239337" />
+    <state width="1136" height="172" key="GridCell.Tab.0.bottom" timestamp="1578315667238">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="999" height="257" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1578275258027" />
+    <state width="1638" height="257" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1578214618689" />
+    <state width="999" height="257" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1578276173148" />
+    <state width="1136" height="172" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1578315667238" />
+    <state width="1136" height="172" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1578313366210" />
+    <state width="1136" height="172" key="GridCell.Tab.0.center" timestamp="1578315667237">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="999" height="257" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1578275258026" />
+    <state width="1638" height="257" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1578214618688" />
+    <state width="999" height="257" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1578276173148" />
+    <state width="1136" height="172" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1578315667237" />
+    <state width="1136" height="172" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1578313366209" />
+    <state width="1136" height="172" key="GridCell.Tab.0.left" timestamp="1578315667236">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="999" height="257" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1578275258025" />
+    <state width="1638" height="257" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1578214618688" />
+    <state width="999" height="257" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1578276173147" />
+    <state width="1136" height="172" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1578315667236" />
+    <state width="1136" height="172" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1578313366209" />
+    <state width="1136" height="172" key="GridCell.Tab.0.right" timestamp="1578315667237">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="999" height="257" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1578275258026" />
+    <state width="1638" height="257" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1578214618689" />
+    <state width="999" height="257" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1578276173148" />
+    <state width="1136" height="172" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1578315667237" />
+    <state width="1136" height="172" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1578313366210" />
+    <state width="1638" height="320" key="GridCell.Tab.1.bottom" timestamp="1578040950246">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1638" height="319" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1577635320707" />
+    <state width="1638" height="320" key="GridCell.Tab.1.bottom/0.23.1680.966@0.23.1680.966" timestamp="1578040950246" />
+    <state width="1638" height="320" key="GridCell.Tab.1.center" timestamp="1578040950246">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1638" height="319" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
+    <state width="1638" height="320" key="GridCell.Tab.1.center/0.23.1680.966@0.23.1680.966" timestamp="1578040950246" />
+    <state width="1638" height="320" key="GridCell.Tab.1.left" timestamp="1578040950245">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1638" height="319" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
+    <state width="1638" height="320" key="GridCell.Tab.1.left/0.23.1680.966@0.23.1680.966" timestamp="1578040950245" />
+    <state width="1638" height="320" key="GridCell.Tab.1.right" timestamp="1578040950246">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state width="1638" height="319" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1577635320706" />
+    <state width="1638" height="320" key="GridCell.Tab.1.right/0.23.1680.966@0.23.1680.966" timestamp="1578040950246" />
+    <state x="353" y="226" key="SettingsEditor" timestamp="1578316168092">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state x="346" y="146" key="SettingsEditor/0.23.1680.961@0.23.1680.961" timestamp="1578215587185" />
+    <state x="346" y="146" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1578214616644" />
+    <state x="346" y="146" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1577626663276" />
+    <state x="353" y="226" key="SettingsEditor/0.23.1680.966@0.23.1680.966" timestamp="1578316168092" />
+    <state x="698" y="143" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1578277316596" />
+    <state x="460" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1578275153716">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="460" y="357" key="com.intellij.ide.util.TipDialog/0.23.1680.961@0.23.1680.961" timestamp="1578275153716" />
+    <state x="460" y="358" key="com.intellij.ide.util.TipDialog/0.23.1680.963@0.23.1680.963" timestamp="1578200708824" />
+    <state x="460" y="359" key="com.intellij.ide.util.TipDialog/0.23.1680.965@0.23.1680.965" timestamp="1577756421786" />
+    <state x="460" y="359" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1578037915209" />
     <state x="460" y="360" key="com.intellij.ide.util.TipDialog/0.23.1680.967@0.23.1680.967" timestamp="1577540677060" />
+    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578315819996">
+      <screen x="0" y="23" width="1680" height="966" />
+    </state>
+    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.966@0.23.1680.966" timestamp="1578315819996" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ZcxPj$auth.coverage" NAME="auth Coverage Results" MODIFIED="1577710095594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$main.coverage" NAME="main Coverage Results" MODIFIED="1578042951842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$Flask____init___py_.coverage" NAME="Flask (__init__.py) Coverage Results" MODIFIED="1578214535656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZcxPj$auth.coverage" NAME="auth Coverage Results" MODIFIED="1578204355213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$Flask__settings_py_.coverage" NAME="Flask (settings.py) Coverage Results" MODIFIED="1578221911807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZcxPj$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1578315667226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$ZcxPj.coverage" NAME="ZcxPj Coverage Results" MODIFIED="1578217277408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZcxPj$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1577540695473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZcxPj$Flask__models_py_.coverage" NAME="Flask (models.py) Coverage Results" MODIFIED="1577704732781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$Flask__models_py_.coverage" NAME="Flask (models.py) Coverage Results" MODIFIED="1578204419780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$models.coverage" NAME="models Coverage Results" MODIFIED="1578310747515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Life" />
   </component>
 </project>

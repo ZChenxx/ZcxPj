@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-8">
+{#                    <h3 class="panel-title"><span class="glyphicon glyphicon-plus"></span>&nbsp;注册</h3>#}
+            </div>
+          <div class="col-md-4">
+                <div class="card   bg-light">
+                    <div class="card-header"><h4>Register</h4></div>
+                    <div class="card-body">
+             {% for msg in get_flashed_messages(category_filter=['ok']) %}
+                            <div class="alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                                {{ msg }}
+                            </div>
+                            {% endfor %}
+                     {% for msg in get_flashed_messages(category_filter=['err']) %}
+                            <div class="alert-error alert" style="color: red;background-color: red">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                                {{ msg }}
+                            </div>
+                            {% endfor %}
+                <div class="panel-body">
+                    <form role="form" method="POST">
+                        <fieldset>
+                              <div class="input-group mb-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">用户名&#12288;</span>
+                                {{ form.username }}
+                                </div>
+                                    {% for err in form.username.errors%}
+                                    <div class="col-md-12" id="input_user" style="color: red">{{ err }}</div>
+                                    {% endfor %}
+                              </div>
+                            <div class="input-group mb-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">邮箱&#12288;&#12288;</span>
+                                {{ form.email }}
+                                </div>
+                                    {% for err in form.email.errors%}
+                                    <div class="col-md-12" id="input_user" style="color: red">{{ err }}</div>
+                                    {% endfor %}
+                              </div>
+                             <div class="input-group mb-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">密码&#12288;&#12288;</span>
+                                {{ form.password }}
+                                </div>
+                                    {% for err in form.password.errors%}
+                                    <div class="col-md-12" id="input_user" style="color: red">{{ err }}</div>
+                                    {% endfor %}
+                              </div>
+                             <div class="input-group mb-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">确认密码</span>
+                                {{ form.password2 }}
+                                </div>
+                                    {% for err in form.password2.errors%}
+                                    <div class="col-md-12" id="input_user" style="color: red">{{ err }}</div>
+                                    {% endfor %}
+                              </div>
+
+                            <div class="col-md-12" id="error_name"></div>
+                            {{ form.submit }}
+                            {{ form.csrf_token }}
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div></div>
+{% endblock %}
