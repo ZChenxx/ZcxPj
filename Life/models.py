@@ -20,6 +20,7 @@ class User(db.Model,UserMixin):
     confirmed = db.Column(db.Boolean,default=False)
     posts = db.relationship('Post',backref='author',lazy='dynamic')
     active = db.Column(db.Boolean,default=True)
+    comments = db.relationship('Comment',backref='author',lazy='dynamic')
 
     def register(user):
         try:
@@ -44,7 +45,17 @@ class Post(db.Model):
     body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime,default=datetime.utcnow,index=True)
     author_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+    comments = db.relationship('Comment',backref='post',lazy='dynamic')
 
+class Comment(db.Model):
+    __tablename__ = 'comments'
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text)
+    body_html = db.Column(db.Text)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+    disabled = db.Column(db.Boolean)
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
 
 
 

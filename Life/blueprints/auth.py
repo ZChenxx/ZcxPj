@@ -1,5 +1,5 @@
 from flask import url_for, render_template, flash, Blueprint
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, login_required, logout_user
 from Life.models import User
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import redirect
@@ -36,7 +36,6 @@ def login():
         user = User.query.filter_by(email=form.email.data.lower()).first()
         if user is not None and user.validate_password(form.password.data):
             if login_user(user,form.remember_me.data):
-                flash('登录成功','ok')
                 return redirect(url_for('main.index'))
             else:
                 flash('登录失败','err')
@@ -44,3 +43,8 @@ def login():
         flash('密码错误','err')
     return render_template('auth/login.html', form=form)
 
+@auth_bp.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('main.index'))

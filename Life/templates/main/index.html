@@ -7,14 +7,14 @@
 
 
 {% block content %}
-{{ moment.include_moment() }}
-{{ moment.include_jquery() }}
 <div>
     {% if current_user.is_authenticated %}
         <h1>Hello, {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Stranger{% endif %}!</h1>
 
     {{ wtf.quick_form(form) }}
     {% endif %}
+
+<br>
 
 </div>
 <div class="post-tabs">
@@ -27,21 +27,18 @@
 {#    {% include '_posts.html' %}#}
 </div>
 
-    <br>
-    <ul class="posts">
+
     {% for post in posts %}
-    <li class="post">
-        <div class="post-thumbnail">
-{#            <a href="{{ url_for('.user', username=post.author.username) }}">#}
-{#                <img class="img-rounded profile-thumbnail" src="{{ post.author.gravatar(size=40) }}">#}
-{#            </a>#}
-        </div>
-        <div class="post-content">
-             <small data-toggle="tooltip" data-placement="top"
-                           data-timestamp="{{ post.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
-                    data-delay="500">{{ moment(post.timestamp).fromNow() }}</small>
-            <div class="post-author"><a href="#">{{ post.author.username }}</a></div>
-            <div class="post-body">
+{#        <div class="container">#}
+
+        <div class="card">
+        <div class="card-body">
+        <div class="card-title"><a href="#">{{ post.author.username }}</a> <small data-toggle="tooltip" data-placement="top"
+                           data-timestamp="&#12288;{{ post.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
+                    data-delay="500">{{ moment(post.timestamp).fromNow() }}</small></div>
+
+
+            <div class="card-text">
                 {% if post.body_html %}
                     {{ post.body_html | safe }}
                 {% else %}
@@ -51,24 +48,26 @@
             <div class="post-footer">
                 {% if current_user == post.author %}
                 <a href="#">
-                    <span class="label label-primary">Edit</span>
+                    <span class="label label-primary">编辑</span>
                 </a>
-                {% elif current_user.is_administrator() %}
-                <a href="#">
-                    <span class="label label-danger">Edit [Admin]</span>
-                </a>
+{#                {% elif current_user.is_administrator() %}#}
+{#                <a href="#">#}
+{#                    <span class="label label-danger">Edit [Admin]</span>#}
+{#                </a>#}
                 {% endif %}
                 <a href="#">
-                    <span class="label label-default">Permalink</span>
+                    <span class="label label-default"></span>
                 </a>
-                <a href="#">
-                    <span class="label label-primary">Comments</span>
+                <a href="{{ url_for('main.post',id=post.id) }}">
+                    <span class="label label-primary">评论</span>
                 </a>
             </div>
         </div>
-    </li>
+        </div>
+{#        </div>#}
+&nbsp;
     {% endfor %}
-</ul>
+
 {#{% if pagination %}#}
 {#<div class="pagination">#}
 {#    {{ macros.pagination_widget(pagination, '.index') }}#}
