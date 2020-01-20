@@ -1,10 +1,11 @@
 from datetime import datetime
+import random
 
-from flask import current_app
 from flask_login import  UserMixin
 from werkzeug.security import check_password_hash
+from flask_avatars import Identicon
+from . import db, login_manager, avatars
 
-from . import db,login_manager
 
 class Follow(db.Model):
     __tablename__ = 'follows'
@@ -33,6 +34,24 @@ class User(db.Model,UserMixin):
     followers = db.relationship('Follow',foreign_keys=[Follow.followed_id],
                                 backref=db.backref('followed',lazy='joined'),lazy='dynamic',
                                 cascade='all,delete-orphan')
+    avatar_s = db.Column(db.String(64))
+    avatar_m = db.Column(db.String(64))
+    avatar_l = db.Column(db.String(64))
+    avatar_raw = db.Column(db.String(64))
+
+    def __init__(self,**kwargs):
+        super(User, self).__init__(**kwargs)
+        self.generate_avatar()
+
+
+    def generate_avatar(self):
+        avatar = Identicon()
+        filenames = avatar.generate(text=''.join(random.sample('zyxwvutsrqponmlkjihgfedcba',10)))
+        self.avatar_s = filenames[0]
+        self.avatar_m = filenames[1]
+        self.avatar_l = filenames[2]
+        db.session.commit()
+
 
     def register(user):
         try:
@@ -65,6 +84,10 @@ class User(db.Model,UserMixin):
     def is_followed_by(self,user):
         return self.followers.filter_by(follower_id=user.id).first() is not None
 
+    @property
+    def followed_posts(self):
+        return Post.query.join(Follow,Follow.followed_id == Post.author_id).filter(Follow.follower_id == self.id)
+
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer,primary_key=True)
@@ -83,6 +106,4 @@ class Comment(db.Model):
     disabled = db.Column(db.Boolean)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
-
-
 

@@ -1,9 +1,9 @@
-from flask import url_for, render_template, request, Blueprint, flash
+from flask import url_for, render_template, request, Blueprint, flash, make_response, send_from_directory, current_app
 from flask_login import current_user, login_required
 from werkzeug.utils import redirect
 
-from Life.form.main import PostForm, CommentForm
-from Life.models import db, Post, Comment, User
+from Life.form.main import PostForm, CommentForm, EditProfileForm
+from Life.models import db, Post, Comment, User,Follow
 
 main_bp = Blueprint('main',__name__)
 
@@ -15,9 +15,15 @@ def index():
         db.session.add(post)
         db.session.commit()
         return redirect(url_for('main.index'))
-    posts = Post.query.order_by(Post.timestamp.desc()).all()
-    # page = request.args.get('page',1,type=int)
-    return render_template('main/index.html', form=form,posts=posts)
+    show_followed = False
+    if current_user.is_authenticated:
+        show_followed = bool(request.cookies.get('show_followed',''))
+    if show_followed:
+        query = current_user.followed_posts
+    else:
+        query = Post.query
+    posts = query.order_by(Post.timestamp.desc())
+    return render_template('main/index.html', show_followed=show_followed,form=form,posts=posts)
 
 @main_bp.route('/post/<int:id>',methods=['GET','POST'])
 @login_required
@@ -45,6 +51,15 @@ def edit(id):
         return  redirect(url_for('main.post',id=post.id))
     form.body.data = post.body
     return render_template('main/edit_post.html',form=form)
+
+@main_bp.route('/post/<int:id>/delete',methods=['GET'])
+@login_required
+def delete(id):
+    post = Post.query.get_or_404(id)
+    user = User.query.filter_by(id=post.author_id).first()
+    db.session.delete(post)
+    db.session.commit()
+    return redirect(url_for('main.user',username=user.username))
 
 @main_bp.route('/user/<username>')
 def user(username):
@@ -77,3 +92,52 @@ def unfollow(username):
     flash('已取消关注','ok')
     return redirect(url_for('main.user', username=username))
 
+@main_bp.route('/edit-profile',methods=['GET','POST'])
+@login_required
+def edit_profile():
+    form = EditProfileForm()
+    if form.validate_on_submit():
+        current_user.username = form.username.data
+        current_user.location =form.location.data
+        current_user.about_me = form.about_me.data
+        db.session.add(current_user._get_current_object())
+        db.session.commit()
+        return redirect(url_for('main.user',username=current_user.username))
+    form.username.data = current_user.username
+    form.location.data = current_user.location
+    form.about_me.data = current_user.about_me
+    return render_template('main/edit_profile.html',form=form)
+
+@main_bp.route('/followers/<username>')
+def followers(username):
+    user = User.query.filter_by(username=username).first()
+    pagination = user.followers.paginate(1,1,error_out=False)
+    follows = [{'user':item.follower,'timestamp':item.timestamp} for item in pagination.items]
+    return render_template('main/followers.html',user=user,follows=follows)
+
+@main_bp.route('/followed_by/<username>')
+def followed_by(username):
+    user = User.query.filter_by(username=username).first()
+    pagination = user.followed.paginate(1,1,error_out=False)
+    follows = [{'user':item.followed,'timestamp':item.timestamp} for item in pagination.items]
+    return render_template('main/followers.html',user=user,follows=follows)
+
+@main_bp.route('/all')
+@login_required
+def show_all():
+    res = make_response(redirect(url_for('main.index')))
+    res.set_cookie('show_followed','',max_age=30*24*60*60)
+    return res
+
+
+@main_bp.route('/followed')
+@login_required
+def show_followed():
+    res = make_response(redirect(url_for('main.index')))
+    res.set_cookie('show_followed','1',max_age=30*24*60*60)
+    return res
+
+
+@main_bp.route('/avatars/<path:filename>')
+def get_avatar(filename):
+    return send_from_directory(current_app.config['AVATARS_SAVE_PATH'],filename)

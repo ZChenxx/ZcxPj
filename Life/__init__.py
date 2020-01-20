@@ -6,12 +6,14 @@ from flask_login import LoginManager,AnonymousUserMixin
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from flask_moment import Moment
+from flask_avatars import Avatars
 
 from manage import config
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 moment = Moment()
+avatars = Avatars()
 csrf = CSRFProtect()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
@@ -22,7 +24,6 @@ def load_user(user_id):
     from Life.models import User
     user = User.query.get(int(user_id))
     return user
-
 
 
 class Guest(AnonymousUserMixin):
@@ -53,7 +54,7 @@ def register_extensions(app):
     db.init_app(app)
     moment.init_app(app)
     csrf.init_app(app)
-
+    avatars.init_app(app)
 
 
 def register_blueprints(app):

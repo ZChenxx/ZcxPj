@@ -5,21 +5,26 @@
 <div class="page-header">
 {#    <img class="img-rounded profile-thumbnail" src="{{ user.gravatar(size=256) }}">#}
     <div class="profile-header">
+
+    <img class="rounded img-fluid avatar-s profile-popover"
+                                     data-href="{{ url_for('main.user', username=user.username) }}"
+                                     src="{{ url_for('main.get_avatar', filename=user.avatar_m) }}">
         <h1>{{ user.username }}</h1>
-        {% if user.name or user.location %}
+
+            <p><a href="{{ url_for('main.edit_profile') }}">修改信息</a></p>
         <p>
             {% if user.name %}{{ user.name }}<br>{% endif %}
             {% if user.location %}
-                from <a href="http://maps.google.com/?q={{ user.location }}">{{ user.location }}</a><br>
+                来自 <a href="http://maps.google.com/?q={{ user.location }}">{{ user.location }}</a><br>
             {% endif %}
         </p>
-        {% endif %}
+
 {#        {% if current_user.is_administrator() %}#}
 {#        <p><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>#}
 {#        {% endif %}#}
-        {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
-        <p>Member since {{ moment(user.member_since).format('L') }}. Last seen {{ moment(user.last_seen).fromNow() }}.</p>
-        <p>{{ user.posts.count() }} blog posts. {{ user.comments.count() }} comments.</p>
+        {% if user.about_me %}<p>个性签名：{{ user.about_me }}</p>{% endif %}
+        <p>用户注册于：{{ moment(user.member_since).format('L') }}. 上次登录时间： {{ moment(user.last_seen).fromNow() }}.</p>
+        <p>共发表{{ user.posts.count() }} 条微博</p>
         <p>
         {% if current_user.id != user.id %}
                 {% if not current_user.is_following(user) %}
@@ -28,10 +33,10 @@
                 <a href="{{ url_for('main.unfollow',username=user.username) }}" class="btn btn-primary">取消关注</a>
                 {% endif %}
         {% endif %}
-{#            <a href="{{ url_for('.followers', username=user.username) }}">Followers: <span class="badge">{{ user.followers.count() - 1 }}</span></a>#}
-{#            <a href="{{ url_for('.followed_by', username=user.username) }}">Following: <span class="badge">{{ user.followed.count() - 1 }}</span></a>#}
+            <a href="{{ url_for('main.followers', username=user.username) }}">粉丝: <span class="badge">{{ user.followers.count()  }}</span></a>
+            <a href="{{ url_for('main.followed_by', username=user.username) }}">关注: <span class="badge">{{ user.followed.count()  }}</span></a>
             {% if current_user.is_authenticated and user != current_user and user.is_following(current_user) %}
-            | <span class="label label-default">Follows you</span>
+            | <span class="label label-default">已关注你</span>
             {% endif %}
         </p>
 {#        <p>#}
@@ -49,7 +54,12 @@
 
         <div class="card">
         <div class="card-body">
-        <div class="card-title"><a href="{{ url_for('main.user',username=post.author.username) }}">{{ post.author.username }}</a> <small data-toggle="tooltip" data-placement="top"
+        <div class="card-title">
+
+            <img class="rounded img-fluid avatar-s profile-popover"
+                                     data-href="{{ url_for('main.user', username=post.author.username) }}"
+                                     src="{{ url_for('main.get_avatar', filename=post.author.avatar_s) }}">
+            <a href="{{ url_for('main.user',username=post.author.username) }}">{{ post.author.username }}</a> <small data-toggle="tooltip" data-placement="top"
                            data-timestamp="&#12288;{{ post.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
                     data-delay="500">{{ moment(post.timestamp).fromNow() }}</small></div>
 
@@ -77,6 +87,11 @@
                 <a href="{{ url_for('main.post',id=post.id) }}">
                     <span class="label label-primary">评论</span>
                 </a>
+             {% if post.author_id== current_user.id %}
+                <a href="{{ url_for('main.delete',id=post.id) }}">
+                    <span class="label label-primary">删除</span>
+                </a>
+            {% endif %}
             </div>
         </div>
         </div>

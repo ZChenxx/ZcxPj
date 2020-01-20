@@ -5,7 +5,11 @@
 
        <div class="card">
         <div class="card-body">
-        <div class="card-title"><a href="#">{{ post.author.username }}</a> <small data-toggle="tooltip" data-placement="top"
+        <div class="card-title">
+            <img class="rounded img-fluid avatar-s profile-popover"
+                                     data-href="{{ url_for('main.user', username=post.author.username) }}"
+                                     src="{{ url_for('main.get_avatar', filename=post.author.avatar_s) }}">
+            <a href="#">{{ post.author.username }}</a> <small data-toggle="tooltip" data-placement="top"
                            data-timestamp="&#12288;{{ post.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
                     data-delay="500">{{ moment(post.timestamp).fromNow() }}</small></div>
 
