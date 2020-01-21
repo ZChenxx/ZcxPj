@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.Jcrop.min.css') }}">
+
+{% endblock %}
+{% block content %}
+
+    <div class="card w-100 bg-light">
+        <h3 class="card-header">修改头像</h3>
+
+        <div class="card-body">
+            {{ wtf.quick_form(upload_form,action=url_for('main.upload_avatar')) }}
+            <small class="text-muted">
+                图片格式应为.jpg或.png
+            </small>
+        </div>
+        <div class="card-body">
+            {{ avatars.crop_box('main.get_avatar', filename=current_user.avatar_raw) }}
+        </div>
+        <br>
+{#        {{ avatars.preview_box('main.get_avatar', filename=current_user.avatar_raw) }}#}
+        <div class="card-body">
+            {{ wtf.quick_form(crop_form,action=url_for('main.crop_avatar')) }}
+        </div>
+    </div>
+
+    {% block script %}
+        {{ super() }}
+        <script src="{{ url_for('static', filename='js/jquery.Jcrop.min.js') }}"></script>
+        {{ avatars.init_jcrop() }}
+        {% endblock %}
+
+{% endblock %}

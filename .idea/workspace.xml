@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2229ce-8f4c-40bf-a304-c02210aebc95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Life/templates/main/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Life/templates/main/followers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/static/css/jquery.Jcrop.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/static/js/jquery.Jcrop.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Life/templates/main/change_avatar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Life/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Life/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Life/blueprints/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Life/blueprints/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Life/form/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Life/form/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Life/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Life/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Life/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Life/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Life/templates/main/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/main/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Life/templates/main/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/main/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Life/templates/main/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Life/templates/main/edit_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +50,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Life/static/js" />
-      <recent name="$PROJECT_DIR$/static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Life/static/js" />
+      <recent name="$PROJECT_DIR$/Life/static/css" />
       <recent name="$PROJECT_DIR$/Life" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/blueprints" />
-      <recent name="$PROJECT_DIR$/form" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Life/static/js" />
+      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.Flask (run.py)">
@@ -118,14 +115,15 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (run.py) (1)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (run.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
       <module name="ZcxPj" />
       <option name="target" value="$PROJECT_DIR$/run.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -134,7 +132,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Flask (run.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <option name="flaskDebug" value="true" />
       <module name="ZcxPj" />
       <option name="target" value="$PROJECT_DIR$/run.py" />
       <option name="targetType" value="PATH" />
@@ -226,7 +223,8 @@
       <workItem from="1578881851284" duration="9828000" />
       <workItem from="1578971938722" duration="5080000" />
       <workItem from="1579403438378" duration="3001000" />
-      <workItem from="1579485169470" duration="15879000" />
+      <workItem from="1579485169470" duration="16504000" />
+      <workItem from="1579580917007" duration="8629000" />
     </task>
     <task id="LOCAL-00001" summary="second">
       <created>1578316266658</created>
@@ -249,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578923933871</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新">
+      <created>1579517650481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579517650481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +274,8 @@
     <MESSAGE value="second" />
     <MESSAGE value="third" />
     <MESSAGE value="four" />
-    <option name="LAST_COMMIT_MESSAGE" value="four" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578243206184">
@@ -280,50 +286,50 @@
       <screen x="0" y="23" width="1680" height="963" />
     </state>
     <state x="568" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.963@0.23.1680.963" timestamp="1578213160149" />
-    <state x="111" y="160" key="CommitChangelistDialog2" timestamp="1578923933744">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="111" y="159" key="CommitChangelistDialog2" timestamp="1579517650324">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state x="111" y="159" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1578405088504" />
+    <state x="111" y="159" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1579517650324" />
     <state x="111" y="159" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1578316266221" />
     <state x="111" y="160" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1578923933743" />
-    <state width="1132" height="172" key="GridCell.Tab.0.bottom" timestamp="1579517021971">
+    <state width="1090" height="172" key="GridCell.Tab.0.bottom" timestamp="1579597593189">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state width="1195" height="172" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1579006298478" />
     <state width="1195" height="172" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1578988058380" />
     <state width="949" height="172" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1579516372099" />
-    <state width="1132" height="172" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1579517021971" />
-    <state width="1420" height="172" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1578919871803" />
+    <state width="1090" height="172" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1579597593189" />
+    <state width="1090" height="172" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1579593050195" />
     <state width="1044" height="172" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1578754090740" />
     <state width="1420" height="172" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578924029534" />
-    <state width="1132" height="172" key="GridCell.Tab.0.center" timestamp="1579517021970">
+    <state width="1090" height="172" key="GridCell.Tab.0.center" timestamp="1579597593188">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state width="1195" height="172" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1579006298478" />
     <state width="1195" height="172" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1578988058380" />
     <state width="949" height="172" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1579516372098" />
-    <state width="1132" height="172" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1579517021970" />
-    <state width="1420" height="172" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1578919871802" />
+    <state width="1090" height="172" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1579597593188" />
+    <state width="1090" height="172" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1579593050194" />
     <state width="1044" height="172" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1578754090739" />
     <state width="1420" height="172" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1578924029534" />
-    <state width="1132" height="172" key="GridCell.Tab.0.left" timestamp="1579517021970">
+    <state width="1090" height="172" key="GridCell.Tab.0.left" timestamp="1579597593188">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state width="1195" height="172" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1579006298478" />
     <state width="1195" height="172" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1578988058379" />
     <state width="949" height="172" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1579516372098" />
-    <state width="1132" height="172" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1579517021970" />
-    <state width="1420" height="172" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1578919871801" />
+    <state width="1090" height="172" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1579597593188" />
+    <state width="1090" height="172" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1579593050194" />
     <state width="1044" height="172" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1578754090739" />
     <state width="1420" height="172" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1578924029533" />
-    <state width="1132" height="172" key="GridCell.Tab.0.right" timestamp="1579517021971">
+    <state width="1090" height="172" key="GridCell.Tab.0.right" timestamp="1579597593189">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state width="1195" height="172" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1579006298478" />
     <state width="1195" height="172" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1578988058380" />
     <state width="949" height="172" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1579516372099" />
-    <state width="1132" height="172" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1579517021971" />
-    <state width="1420" height="172" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1578919871802" />
+    <state width="1090" height="172" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1579597593189" />
+    <state width="1090" height="172" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1579593050195" />
     <state width="1044" height="172" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1578754090740" />
     <state width="1420" height="172" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1578924029534" />
     <state width="1638" height="320" key="GridCell.Tab.1.bottom" timestamp="1578040950246">
@@ -354,25 +360,25 @@
     <state x="346" y="146" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1577626663276" />
     <state x="353" y="226" key="SettingsEditor/0.23.1680.966@0.23.1680.966" timestamp="1578316168092" />
     <state x="698" y="143" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1578277316596" />
-    <state x="294" y="246" key="Vcs.Push.Dialog.v2" timestamp="1578923935993">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="294" y="244" key="Vcs.Push.Dialog.v2" timestamp="1579517653164">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state x="294" y="244" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1578405097966" />
+    <state x="294" y="244" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1579517653164" />
     <state x="294" y="244" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1578316274277" />
     <state x="294" y="246" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1578923935993" />
-    <state x="460" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1579485186775">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state x="460" y="360" key="com.intellij.ide.util.TipDialog" timestamp="1579580918506">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="460" y="357" key="com.intellij.ide.util.TipDialog/0.23.1680.961@0.23.1680.961" timestamp="1578275153716" />
     <state x="460" y="358" key="com.intellij.ide.util.TipDialog/0.23.1680.963@0.23.1680.963" timestamp="1579485186775" />
     <state x="460" y="359" key="com.intellij.ide.util.TipDialog/0.23.1680.965@0.23.1680.965" timestamp="1578881852285" />
-    <state x="460" y="360" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1578544270236" />
+    <state x="460" y="360" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1579580918506" />
     <state x="460" y="360" key="com.intellij.ide.util.TipDialog/0.23.1680.967@0.23.1680.967" timestamp="1578971939848" />
     <state x="460" y="362" key="com.intellij.ide.util.TipDialog/0.23.1680.972@0.23.1680.972" timestamp="1578722731390" />
-    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579517613808">
+    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579598203132">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.965@0.23.1680.965" timestamp="1579517613808" />
+    <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.965@0.23.1680.965" timestamp="1579598203132" />
     <state x="483" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.966@0.23.1680.966" timestamp="1578315819996" />
     <state x="483" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.972@0.23.1680.972" timestamp="1578923912415" />
   </component>
@@ -382,7 +388,7 @@
     <SUITE FILE_PATH="coverage/ZcxPj$Flask__run_py___1_.coverage" NAME="Flask (run.py) (1) Coverage Results" MODIFIED="1578989409065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ZcxPj$auth.coverage" NAME="auth Coverage Results" MODIFIED="1578204355213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZcxPj$Flask__settings_py_.coverage" NAME="Flask (settings.py) Coverage Results" MODIFIED="1578221911807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZcxPj$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1579517021964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZcxPj$Flask__run_py_.coverage" NAME="Flask (run.py) Coverage Results" MODIFIED="1579597593181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZcxPj$ZcxPj.coverage" NAME="ZcxPj Coverage Results" MODIFIED="1578217277408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZcxPj$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1577540695473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ZcxPj$Flask__models_py_.coverage" NAME="Flask (models.py) Coverage Results" MODIFIED="1578204419780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -6,6 +6,10 @@
     <h1>Edit Your Profile</h1>
 </div>
 <div class="col-md-4">
+<img class="rounded img-fluid avatar-s profile-popover"
+                                     data-href="{{ url_for('main.change_avatar', username=current_user.username) }}"
+                                     src="{{ url_for('main.get_avatar', filename=current_user.avatar_m) }}">
+    <a href="{{ url_for('main.change_avatar') }}">上传头像</a>
     {{ wtf.quick_form(form) }}
 </div>
 {% endblock %}

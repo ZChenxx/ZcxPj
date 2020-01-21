@@ -1,5 +1,6 @@
 from flask_pagedown.fields import PageDownField
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
+from flask_wtf.file import FileRequired, FileAllowed
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField, HiddenField, FileField
 from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired, Length, Regexp, EqualTo, ValidationError
 
@@ -17,3 +18,14 @@ class EditProfileForm(FlaskForm):
     location = StringField('位置',validators=[Length(0,64)])
     about_me = TextAreaField('个性签名')
     submit = SubmitField('确认修改')
+
+class UploadAvatarForm(FlaskForm):
+    image = FileField('上传',validators=[FileRequired(),FileAllowed(['jpg','png'],'文件格式应该为.jpg或.png')])
+    submit = SubmitField('上传')
+
+class CropAvatarForm(FlaskForm):
+    x = HiddenField()
+    y = HiddenField()
+    w = HiddenField()
+    h = HiddenField()
+    submit = SubmitField('裁剪并上传')

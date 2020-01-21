@@ -2,7 +2,8 @@ from flask import url_for, render_template, request, Blueprint, flash, make_resp
 from flask_login import current_user, login_required
 from werkzeug.utils import redirect
 
-from Life.form.main import PostForm, CommentForm, EditProfileForm
+from Life import avatars
+from Life.form.main import PostForm, CommentForm, EditProfileForm, UploadAvatarForm, CropAvatarForm
 from Life.models import db, Post, Comment, User,Follow
 
 main_bp = Blueprint('main',__name__)
@@ -92,7 +93,7 @@ def unfollow(username):
     flash('已取消关注','ok')
     return redirect(url_for('main.user', username=username))
 
-@main_bp.route('/edit-profile',methods=['GET','POST'])
+@main_bp.route('/edit_profile',methods=['GET','POST'])
 @login_required
 def edit_profile():
     form = EditProfileForm()
@@ -107,6 +108,41 @@ def edit_profile():
     form.location.data = current_user.location
     form.about_me.data = current_user.about_me
     return render_template('main/edit_profile.html',form=form)
+
+@main_bp.route('/edit_profile/avatar',methods=['POST','GET'])
+@login_required
+def change_avatar():
+    upload_form = UploadAvatarForm()
+    crop_form = CropAvatarForm()
+    return render_template('main/change_avatar.html',upload_form=upload_form,crop_form=crop_form)
+
+@main_bp.route('/edit_profile/avatar/upload',methods=['POST'])
+@login_required
+def upload_avatar():
+    form = UploadAvatarForm()
+    if form.validate_on_submit():
+        image = form.image.data
+        filename = avatars.save_avatar(image)
+        current_user.avatar_raw = filename
+        db.session.commit()
+    return redirect(url_for('main.change_avatar'))
+
+@main_bp.route('/edit_profile/avatar/crop',methods=['POST'])
+@login_required
+def crop_avatar():
+    form = CropAvatarForm()
+    if form.validate_on_submit():
+        x = form.x.data
+        y = form.y.data
+        w = form.w.data
+        h = form.h.data
+        filenames = avatars.crop_avatar(current_user.avatar_raw,x,y,w,h)
+        current_user.avatar_s = filenames[0]
+        current_user.avatar_m = filenames[1]
+        current_user.avatar_l = filenames[2]
+        db.session.commit()
+    return redirect(url_for('main.edit_profile'))
+
 
 @main_bp.route('/followers/<username>')
 def followers(username):
