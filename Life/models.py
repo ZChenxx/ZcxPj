@@ -4,6 +4,7 @@ import random
 from flask_login import  UserMixin
 from werkzeug.security import check_password_hash
 from flask_avatars import Identicon
+
 from . import db, login_manager, avatars
 
 
@@ -28,6 +29,8 @@ class User(db.Model,UserMixin):
     posts = db.relationship('Post',backref='author',lazy='dynamic')
     active = db.Column(db.Boolean,default=True)
     comments = db.relationship('Comment',backref='author',lazy='dynamic')
+    photos = db.relationship('Photo', backref='author', lazy='dynamic')
+    movies = db.relationship('Movie', backref='author', lazy='dynamic')
     followed = db.relationship('Follow',foreign_keys=[Follow.follower_id],
                                backref=db.backref('follower',lazy='joined'),lazy='dynamic',
                                cascade='all,delete-orphan')
@@ -95,7 +98,18 @@ class Post(db.Model):
     body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime,default=datetime.utcnow,index=True)
     author_id = db.Column(db.Integer,db.ForeignKey('users.id'))
-    comments = db.relationship('Comment',backref='post',lazy='dynamic')
+    comments = db.relationship('Comment',backref='post',lazy='dynamic',cascade='all,delete-orphan')
+    photos = db.relationship('Photo',backref='post',lazy='dynamic',cascade='all,delete-orphan')
+    movies = db.relationship('Movie',backref='post',lazy='dynamic',cascade='all,delete-orphan')
+
+class Photo(db.Model):
+    __tablename__ = 'photos'
+    id = db.Column(db.Integer, primary_key=True)
+    filename = db.Column(db.String(64))
+    filename_s = db.Column(db.String(64))
+    filename_m = db.Column(db.String(64))
+    post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
 class Comment(db.Model):
     __tablename__ = 'comments'
@@ -107,3 +121,9 @@ class Comment(db.Model):
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
 
+class Movie(db.Model):
+    __tablename__ = 'movies'
+    id = db.Column(db.Integer, primary_key=True)
+    filename = db.Column(db.String(64))
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))

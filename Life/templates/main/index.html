@@ -48,11 +48,34 @@
                 {% else %}
                     {{ post.body }}
                 {% endif %}
+            <br>
+            {% for photo in photos %}
+                {% if photo.post_id == post.id %}
+               <a href="{{ url_for('static', filename='photos/%s' %(photo.filename)) }}"><img  src="{{ url_for('static', filename='photos/%s' %(photo.filename_s) ) }}"></a>&nbsp;
+                {% endif %}
+                {% endfor %}
+            {% for movie in movies %}
+            {% if movie.post_id == post.id %}
+                <video  width="320" height="240" controls="controls" >
+                 <source src="{{ url_for('static', filename='movies/%s' %(movie.filename)) }}" type="video/mp4">
+                 <source src="{{ url_for('static', filename='movies/%s' %(movie.filename)) }}" type="video/ogg">
+                    Sorry, your browser doesn't support embedded videos.</video>
+                {% endif %}
+                {% endfor %}
             </div>
             <div class="post-footer">
+                        {% if post.author_id== current_user.id %}
+                <a href="{{ url_for('main.delete',id=post.id) }}">
+                    <span style="float:right" class="badge badge-dark">删除</span>
+                </a>
+            {% endif %}
+                            <a href="{{ url_for('main.post',id=post.id) }}">
+                    <span style="float:right" class="badge badge-success">评论</span>
+                </a>
+
                 {% if current_user == post.author %}
                 <a href="{{ url_for('main.edit',id=post.id) }}">
-                    <span class="label label-primary">编辑</span>
+                    <span style="float:right" class="badge badge-primary">编辑</span>
                 </a>
 {#                {% elif current_user.is_administrator() %}#}
 {#                <a href="#">#}
@@ -60,16 +83,9 @@
 {#                </a>#}
                 {% endif %}
                 <a href="#">
-                    <span class="label label-default"></span>
+                    <span  class="label label-default"></span>
                 </a>
-                <a href="{{ url_for('main.post',id=post.id) }}">
-                    <span class="label label-primary">评论</span>
-                </a>
-            {% if post.author_id== current_user.id %}
-                <a href="{{ url_for('main.delete',id=post.id) }}">
-                    <span class="label label-primary">删除</span>
-                </a>
-            {% endif %}
+
             </div>
         </div>
         </div>

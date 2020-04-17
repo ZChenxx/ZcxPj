@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from flask_moment import Moment
 from flask_avatars import Avatars
-
+from flask_dropzone import Dropzone
 from manage import config
 
 bootstrap = Bootstrap()
@@ -17,7 +17,7 @@ avatars = Avatars()
 csrf = CSRFProtect()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
-
+dropzone = Dropzone()
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -43,6 +43,7 @@ def create_app(config_name=None):
 
     app = Flask(__name__)
     app.config.from_object(config[config_name])
+    app._static_folder = 'static'
     register_extensions(app)
     register_blueprints(app)
 
@@ -55,7 +56,7 @@ def register_extensions(app):
     moment.init_app(app)
     csrf.init_app(app)
     avatars.init_app(app)
-
+    dropzone.init_app(app)
 
 def register_blueprints(app):
     from Life.blueprints.auth import auth_bp

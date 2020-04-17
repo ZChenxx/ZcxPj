@@ -1,11 +1,13 @@
 from flask_pagedown.fields import PageDownField
 from flask_wtf.file import FileRequired, FileAllowed
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField, HiddenField, FileField
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField, HiddenField, FileField,MultipleFileField
 from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired, Length, Regexp, EqualTo, ValidationError
 
 class PostForm(FlaskForm):
     body = PageDownField('mind',validators=[DataRequired()])
+    photo = FileField('图片',render_kw={'class':"btn btn-success",'type':'file','id':'file','multiple':''})
+    movie = FileField('电影')
     submit = SubmitField('发布')
 
 
